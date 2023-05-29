@@ -120,6 +120,8 @@ async function retrieveValues(site) {
 }
 
 async function main() {
+  const attrModal = new bootstrap.Modal(document.getElementById('attribution-modal'));
+  attrModal.show();
   hydro.map.renderMap({
     params: { maptype: "leaflet", lat: 40.75, lon: -111.87 }
   });
